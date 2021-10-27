@@ -4,7 +4,7 @@ const User = require("../database/userschema.js");
 const Todo = require("../database/todos.js");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const path = require("path");
 const { result } = require("underscore");
 app.use(express.static("client/dist"));
